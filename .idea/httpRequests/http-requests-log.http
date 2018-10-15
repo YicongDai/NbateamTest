@@ -1,3 +1,47 @@
+GET http://localhost:3000/teams/5bc518e316e077202434a843
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"numPlayer":100}
+
+<> 2018-10-16T070531.200.json
+
+###
+
+PUT http://localhost:3000/teams/5bc518e316e077202434a843/numPlayer
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"numPlayer":100}
+
+<> 2018-10-16T070527.200.json
+
+###
+
+GET http://localhost:3000/teams/5bc518e316e077202434a843/numPlayer
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"numPlayer":100}
+
+<> 2018-10-16T070524.404.html
+
+###
+
+GET http://localhost:3000/teams/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T070425.200.json
+
+###
+
 GET http://localhost:3000/teams/name/Los
 Accept: */*
 Cache-Control: no-cache

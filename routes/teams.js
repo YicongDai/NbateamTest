@@ -94,7 +94,26 @@ router.addTeam = (req, res) => {
             res.json({ message: 'Team Added Successfully!',data:team});// return a suitable success message
     });
 };
+router.changeNumPlayer = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
 
+    Teams.findById(req.params.id/*id from request parameters*/, function (err, team) {
+        if (err)
+            res.json({message: 'Team NOT Found!', errmsg: err});
+        else {
+            if (team != null) {
+                Teams.update({_id: req.params.id}, {numPlayer: req.body.numPlayer}, function (err) {
+                    if (err)
+                        res.json({message: 'Team NOT Change NumPlayer!', errmsg: err});
+                    else
+                        res.json({message: 'Team Successfully Change NumPlayer!'});
+                });
+            }
+            else
+                res.json({message: 'Team NOT Found! Please check the right id'});
+        }
+    });
+};
 
 router.changeRank = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
