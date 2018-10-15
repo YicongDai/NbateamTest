@@ -30,7 +30,7 @@ app.use('/users', usersRouter);
 app.get('/teams', teams.findAll);
 
 app.get('/teams/:id', teams.findOne);
-
+app.get('/teams/name/:name',teams.findOneByName);
 app.post('/teams',teams.addTeam);
 
 app.put('/teams/:id/rank', teams.changeRank);

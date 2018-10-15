@@ -42,6 +42,37 @@ router.findOne = (req, res) => {
     });
 };
 
+router.findOneByName= (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    var keyword = req.params.name;
+
+    var _filter={
+        $or: [
+
+            {name: {$regex: keyword, $options: '$i'}},
+
+        ]
+    }
+    var count = 0
+   Teams.count(_filter, function (err, doc) {
+        if (err) {
+            res.json({errmsg: err});
+        } else {
+            count = doc
+        }
+    })
+
+  Teams.find(_filter).limit(10)
+        .sort({'_id': -1})
+        .exec(function (err, teams) {
+            if (err||teams.length==0) {
+                res.json({message:"Teams Not Found!",errmsg: err});
+            } else {
+                res.send(JSON.stringify(teams,null,5));
+            }
+
+        });
+};
 router.addTeam = (req, res) => {
 
 
