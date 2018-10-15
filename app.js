@@ -34,6 +34,7 @@ app.get('/teams/:id', teams.findOne);
 app.post('/teams',teams.addTeam);
 
 app.put('/teams/:id/rank', teams.changeRank);
+app.delete('/teams/:id', teams.deleteTeam);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

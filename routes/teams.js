@@ -31,7 +31,7 @@ router.findOne = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
 
-    Teams.find({"_id": req.params.id}, function (err, team) {
+    Teams.findById({"_id": req.params.id}, function (err, team) {
         if (err)
             res.json({message: 'Team NOT Found!', errmsg: err});
         else {
@@ -68,11 +68,11 @@ router.addTeam = (req, res) => {
 router.changeRank = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
-    Teams.findById(req.params.id/*id from request parameters*/, function(err,team) {
+    Teams.findById(req.params.id/*id from request parameters*/, function (err, team) {
         if (err)
-            res.json({ message: 'Team NOT Found!', errmsg : err } );
+            res.json({message: 'Team NOT Found!', errmsg: err});
         else {
-            if(team!=null) {
+            if (team != null) {
                 Teams.update({_id: req.params.id}, {rank: req.body.rank}, function (err) {
                     if (err)
                         res.json({message: 'Team NOT ChangeRank!', errmsg: err});
@@ -81,9 +81,23 @@ router.changeRank = (req, res) => {
                 });
             }
             else
-                res.json({ message: 'Team NOT Found! Please check the right id'} );
+                res.json({message: 'Team NOT Found! Please check the right id'});
         }
     });
-
 };
+
+    router.deleteTeam= (req, res) => {
+
+        Teams.findByIdAndRemove(req.params.id, function (err,teams) {
+            if (err)
+                res.json({message: 'Team NOT DELETED!', errmsg: err});
+            else {
+                if (teams != null)
+                    res.json({message: 'Team Successfully Deleted!'});
+
+                else
+                    res.json({message: 'Team NOT Found! Please check the right id'});
+            }
+        });
+    };
 module.exports = router;

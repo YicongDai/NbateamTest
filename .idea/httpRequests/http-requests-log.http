@@ -1,3 +1,133 @@
+DELETE http://localhost:3000/teams/5bc518c3e5cd0b0fa82dc73f
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T065741.200.json
+
+###
+
+GET http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T065728.200.json
+
+###
+
+GET http://localhost:3000/team
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T065724.404.html
+
+###
+
+GET http://localhost:3000/team/5bc517653ccd881d44e21cb8
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T065721.404.html
+
+###
+
+GET http://localhost:3000/team\/5bc517653ccd881d44e21cb8
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+###
+
+GET http://localhost:3000/teams/5bc517653ccd881d44e21cb8
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T065707.200.json
+
+###
+
+GET http://localhost:3000/teams/5bc517653ccd881d44e21cb8
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T065628.200.json
+
+###
+
+GET http://localhost:3000/teams/5bc517653ccd881d44e21cb8
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T065621.200.json
+
+###
+
+GET http://localhost:3000/teams/5bc517653ccd881d44e21cb7
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T065619.200.json
+
+###
+
+GET http://localhost:3000/teams/5bc517653ccd881d44e21cb7
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T065547.200.json
+
+###
+
+DELETE http://localhost:3000/teams/5bc517653ccd881d44e21cb7
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T065543.200.json
+
+###
+
+GET http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T065530.200.json
+
+###
+
 GET http://localhost:3000/teams/5bc518e316e077202434a843/
 Accept: */*
 Cache-Control: no-cache
