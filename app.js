@@ -28,6 +28,8 @@ app.use('/users', usersRouter);
 // Our Custom Donation Web App Routes
 //teams
 app.get('/teams', teams.findAll);
+
+app.get('/teams/:id', teams.findOne);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

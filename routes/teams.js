@@ -25,5 +25,20 @@ router.findAll = (req, res) => {
 
         res.send(JSON.stringify(teams,null,5));
     });
-}
+};
+
+router.findOne = (req, res) => {
+
+    res.setHeader('Content-Type', 'application/json');
+
+    Teams.find({"_id": req.params.id}, function (err, team) {
+        if (err)
+            res.json({message: 'Team NOT Found!', errmsg: err});
+        else {
+            if (team!=null)
+                res.send(JSON.stringify(team, null, 5));
+            else  res.json({ message: 'Team NOT Found! Please check the right id'} );
+        }
+    });
+};
 module.exports = router;
