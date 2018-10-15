@@ -1,3 +1,25 @@
+GET http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
+
+<> 2018-10-16T064043.200.json
+
+###
+
+POST http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
+
+<> 2018-10-16T064037.200.json
+
+###
+
 GET http://localhost:3000/teams/5bc510147e1cf8ef1269eda4
 Accept: */*
 Cache-Control: no-cache

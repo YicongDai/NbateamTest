@@ -41,4 +41,26 @@ router.findOne = (req, res) => {
         }
     });
 };
+
+router.addTeam = (req, res) => {
+
+
+    res.setHeader('Content-Type', 'application/json');
+
+    var team = new Teams();
+
+    team.name =  req.body.name
+    team.city=req.body.city
+    team.zone={name:req.body.zone.name,location:req.body.location}
+    team.numPlayer =req.body.numPlayer
+    team.championships=req.body.numPlayer
+        team.rank=req.body.numPlayer.rank
+
+   team.save(function(err) {
+        if (err)
+            res.json({ message: 'Team NOT Added!', errmsg : err } );// return a suitable error message
+        else
+            res.json({ message: 'Team Added Successfully!',data:team});// return a suitable success message
+    });
+};
 module.exports = router;
