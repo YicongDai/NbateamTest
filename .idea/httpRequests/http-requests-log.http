@@ -1,3 +1,80 @@
+GET http://localhost:3000/teams/5bc518e316e077202434a843/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T064743.200.json
+
+###
+
+GET http://localhost:3000/teams/5bc518e316e077202434a843/rank
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T064736.404.html
+
+###
+
+PUT http://localhost:3000/teams/5bc518e316e077202434a843/rank
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-16T064732.200.json
+
+###
+
+GET http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
+
+<> 2018-10-16T064704.200.json
+
+###
+
+POST http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
+
+<> 2018-10-16T064659.200.json
+
+###
+
+GET http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
+
+<> 2018-10-16T064630.200.json
+
+###
+
+POST http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
+
+<> 2018-10-16T064627.200.json
+
+###
+
 GET http://localhost:3000/teams
 Accept: */*
 Cache-Control: no-cache

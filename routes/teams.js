@@ -54,7 +54,7 @@ router.addTeam = (req, res) => {
     team.zone={name:req.body.zone.name,location:req.body.location}
     team.numPlayer =req.body.numPlayer
     team.championships=req.body.numPlayer
-        team.rank=req.body.numPlayer.rank
+        team.rank=req.body.rank
 
    team.save(function(err) {
         if (err)
@@ -62,5 +62,28 @@ router.addTeam = (req, res) => {
         else
             res.json({ message: 'Team Added Successfully!',data:team});// return a suitable success message
     });
+};
+
+
+router.changeRank = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+
+    Teams.findById(req.params.id/*id from request parameters*/, function(err,team) {
+        if (err)
+            res.json({ message: 'Team NOT Found!', errmsg : err } );
+        else {
+            if(team!=null) {
+                Teams.update({_id: req.params.id}, {rank: req.body.rank}, function (err) {
+                    if (err)
+                        res.json({message: 'Team NOT ChangeRank!', errmsg: err});
+                    else
+                        res.json({message: 'Team Successfully ChangeRank!'});
+                });
+            }
+            else
+                res.json({ message: 'Team NOT Found! Please check the right id'} );
+        }
+    });
+
 };
 module.exports = router;
