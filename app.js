@@ -7,6 +7,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
+
+const teams = require("./routes/teams");
+
 var app = express();
 
 // view engine setup
@@ -21,7 +25,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
+// Our Custom Donation Web App Routes
+//teams
+app.get('/teams', teams.findAll);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

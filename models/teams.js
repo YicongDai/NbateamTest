@@ -11,4 +11,4 @@ let TeamSchema = new mongoose.Schema({
     },
     { collection: 'team' });
 
-module.exports = mongoose.model('team', TeamSchema );
+module.exports = mongoose.model('teams', TeamSchema );
