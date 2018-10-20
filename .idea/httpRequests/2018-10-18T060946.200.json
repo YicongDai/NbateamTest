@@ -1,0 +1,15 @@
+{
+  "message": "Team Added Successfully!",
+  "data": {
+    "zone": {
+      "name": "Center Division",
+      "location": "East"
+    },
+    "_id": "5bc7b32a9df70025a0a34fd5",
+    "name": "Cleveland Cavaliers",
+    "city": "Cleveland ",
+    "numPlayer": 20,
+    "championships": 20,
+    "rank": 4
+  }
+}

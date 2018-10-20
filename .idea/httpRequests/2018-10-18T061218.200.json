@@ -1,0 +1,15 @@
+{
+  "_id": "5bc7acbc02b0bac3fe64eda9",
+  "name": "11",
+  "age": 1,
+  "height": 1,
+  "weight": 1,
+  "nationality": "11",
+  "position": "1",
+  "teamId": {
+    "name": "Los Angeles Cippers",
+    "city": "Los Angeles "
+  },
+  "salary": 1,
+  "joinTime": "1111-11-11"
+}

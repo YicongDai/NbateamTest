@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 
 
 const teams = require("./routes/teams");
-
+const players = require("./routes/players");
 var app = express();
 
 // view engine setup
@@ -31,12 +31,16 @@ app.get('/teams', teams.findAll);
 
 app.get('/teams/:id', teams.findOne);
 app.get('/teams/name/:name',teams.findOneByName);
+// app.get('/teams/info',teams.findAllInformation);
 app.post('/teams',teams.addTeam);
 
 app.put('/teams/:id/rank', teams.changeRank);
 app.put('/teams/:id/numPlayer', teams.changeNumPlayer);
 app.delete('/teams/:id', teams.deleteTeam);
-
+//players
+app.get('/players', players.findAll);
+app.get('/players/:name', players.findOne);
+app.get('/players/:id/info',players.findTeamInformation);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

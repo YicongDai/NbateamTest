@@ -30,8 +30,7 @@ router.findAll = (req, res) => {
 router.findOne = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
-
-    Teams.findById({"_id": req.params.id}, function (err, team) {
+    Teams.findOne({"_id": req.params.id}, function (err, team) {
         if (err)
             res.json({message: 'Team NOT Found!', errmsg: err});
         else {
@@ -41,7 +40,20 @@ router.findOne = (req, res) => {
         }
     });
 };
-
+// router.findAllInformation= (req, res) => {
+//
+//     res.setHeader('Content-Type', 'application/json');
+//
+//     Teams.findOne({"_id": req.params.id}).populate({path:'playerId',select: 'name  -_id'}).exec(function (err, info) {
+//         if (err)
+//             res.send(err);
+//
+//         else
+//             res.send(JSON.stringify(info,null,5));
+//         // res.json({message:info.teamId,data:info});
+//     })
+//
+// };
 router.findOneByName= (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     var keyword = req.params.name;
@@ -80,12 +92,13 @@ router.addTeam = (req, res) => {
 
     var team = new Teams();
 
-    team.name =  req.body.name
-    team.city=req.body.city
-    team.zone={name:req.body.zone.name,location:req.body.location}
-    team.numPlayer =req.body.numPlayer
-    team.championships=req.body.numPlayer
-        team.rank=req.body.rank
+    team.name =  req.body.name;
+    team.city=req.body.city;
+    team.zone={name:req.body.zone.name,location:req.body.zone.location};
+    team.numPlayer =req.body.numPlayer;
+    team.championships=req.body.numPlayer;
+    team.rank=req.body.rank;
+
 
    team.save(function(err) {
         if (err)

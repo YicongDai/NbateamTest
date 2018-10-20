@@ -1,66 +1,11 @@
-GET http://localhost:3000/teams/5bc518e316e077202434a843
+GET http://localhost:3000/teams/5bc78656f34c1e2078895de5
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"numPlayer":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T070531.200.json
-
-###
-
-PUT http://localhost:3000/teams/5bc518e316e077202434a843/numPlayer
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"numPlayer":100}
-
-<> 2018-10-16T070527.200.json
-
-###
-
-GET http://localhost:3000/teams/5bc518e316e077202434a843/numPlayer
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"numPlayer":100}
-
-<> 2018-10-16T070524.404.html
-
-###
-
-GET http://localhost:3000/teams/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"rank":100}
-
-<> 2018-10-16T070425.200.json
-
-###
-
-GET http://localhost:3000/teams/name/Los
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"rank":100}
-
-<> 2018-10-16T070056.200.json
-
-###
-
-DELETE http://localhost:3000/teams/5bc518c3e5cd0b0fa82dc73f
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"rank":100}
-
-<> 2018-10-16T065741.200.json
+<> 2018-10-19T065256.200.json
 
 ###
 
@@ -69,106 +14,207 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"rank":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T065728.200.json
+<> 2018-10-19T065246.200.json
 
 ###
 
-GET http://localhost:3000/team
+GET http://localhost:3000/players/11
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"rank":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T065724.404.html
+<> 2018-10-19T063507.200.json
 
 ###
 
-GET http://localhost:3000/team/5bc517653ccd881d44e21cb8
+GET http://localhost:3000/players/11
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"rank":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T065721.404.html
+<> 2018-10-19T063400.500.json
 
 ###
 
-GET http://localhost:3000/team\/5bc517653ccd881d44e21cb8
+GET http://localhost:3000/players/11
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"rank":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-19T063309.200.json
 
 ###
 
-GET http://localhost:3000/teams/5bc517653ccd881d44e21cb8
+GET http://localhost:3000/players/5bc7acbc02b0bac3fe64eda9
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"rank":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T065707.200.json
+<> 2018-10-19T063159.200.json
 
 ###
 
-GET http://localhost:3000/teams/5bc517653ccd881d44e21cb8
+GET http://localhost:3000/players/5bc7acbc02b0bac3fe64eda9/info
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"rank":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T065628.200.json
+<> 2018-10-19T063145.200.json
 
 ###
 
-GET http://localhost:3000/teams/5bc517653ccd881d44e21cb8
+GET http://localhost:3000/players/5bc7acbc02b0bac3fe64eda9
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"rank":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T065621.200.json
+<> 2018-10-19T063108.200.json
 
 ###
 
-GET http://localhost:3000/teams/5bc517653ccd881d44e21cb7
+GET http://localhost:3000/players
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"rank":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T065619.200.json
+<> 2018-10-19T063055.200.json
 
 ###
 
-GET http://localhost:3000/teams/5bc517653ccd881d44e21cb7
+GET http://localhost:3000/players/5bc7acbc02b0bac3fe64eda9
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"rank":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T065547.200.json
+<> 2018-10-19T063002.200.json
 
 ###
 
-DELETE http://localhost:3000/teams/5bc517653ccd881d44e21cb7
+GET http://localhost:3000/players
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"rank":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T065543.200.json
+<> 2018-10-19T062953.200.json
+
+###
+
+GET http://localhost:3000/players/11
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-19T062916.200.json
+
+###
+
+GET http://localhost:3000/players/11
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-19T062847.200.json
+
+###
+
+GET http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-19T062844.200.json
+
+###
+
+GET http://localhost:3000/players/11
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-19T062842.200.json
+
+###
+
+GET http://localhost:3000/players/11
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-19T062800.200.json
+
+###
+
+GET http://localhost:3000/players/11
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-19T062728.200.json
+
+###
+
+GET http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-19T062716.200.json
+
+###
+
+GET http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T062204.200.json
+
+###
+
+DELETE http://localhost:3000/teams/5bc7b4cd577570208c7b2f12
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T061731.200.json
 
 ###
 
@@ -177,53 +223,9 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"rank":100}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T065530.200.json
-
-###
-
-GET http://localhost:3000/teams/5bc518e316e077202434a843/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"rank":100}
-
-<> 2018-10-16T064743.200.json
-
-###
-
-GET http://localhost:3000/teams/5bc518e316e077202434a843/rank
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"rank":100}
-
-<> 2018-10-16T064736.404.html
-
-###
-
-PUT http://localhost:3000/teams/5bc518e316e077202434a843/rank
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"rank":100}
-
-<> 2018-10-16T064732.200.json
-
-###
-
-GET http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
-
-<> 2018-10-16T064704.200.json
+<> 2018-10-18T061649.200.json
 
 ###
 
@@ -232,20 +234,9 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-<> 2018-10-16T064659.200.json
-
-###
-
-GET http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
-
-<> 2018-10-16T064630.200.json
+<> 2018-10-18T061645.200.json
 
 ###
 
@@ -254,20 +245,9 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":ObjectId("5bc7acbc02b0bac3fe64eda9")}
 
-<> 2018-10-16T064627.200.json
-
-###
-
-GET http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
-
-<> 2018-10-16T064043.200.json
+<> 2018-10-18T061636.400.html
 
 ###
 
@@ -276,51 +256,295 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20, "championships":0,"rank":10}
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"ObjectId("5bc7acbc02b0bac3fe64eda9")"}
 
-<> 2018-10-16T064037.200.json
-
-###
-
-GET http://localhost:3000/teams/5bc510147e1cf8ef1269eda4
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-10-16T062811.200.json
+<> 2018-10-18T061625.400.html
 
 ###
 
-GET http://localhost:3000/teams/5bc510147e1cf8ef1269eda4
+POST http://localhost:3000/teams
 Accept: */*
 Cache-Control: no-cache
+Content-Type: application/json
 
-<> 2018-10-16T062739.500.json
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":ObjectId("5bc7acbc02b0bac3fe64eda9")}
+
+<> 2018-10-18T061605.400.html
 
 ###
 
 GET http://localhost:3000/teams
 Accept: */*
 Cache-Control: no-cache
+Content-Type: application/json
 
-<> 2018-10-16T062728.200.json
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
 
-###
-
-GET http://localhost:8080/teams
-Accept: */*
-Cache-Control: no-cache
+<> 2018-10-18T061455.200.json
 
 ###
 
-GET http://localhost:8080/teams
+DELETE http://localhost:3000/teams/5bc7b32a9df70025a0a34fd5
 Accept: */*
 Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T061450.200.json
 
 ###
 
-GET http://localhost:8080/resources
+DELETE http://localhost:3000/teams/5bc7b32a9df70025a0a34fd5
 Accept: */*
 Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T061447.200.json
+
+###
+
+GET http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T061406.200.json
+
+###
+
+GET http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T061305.200.json
+
+###
+
+GET http://localhost:3000/teams/info
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T061251.200.json
+
+###
+
+GET http://localhost:3000/teams/info
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T061227.200.json
+
+###
+
+GET http://localhost:3000/players/5bc7acbc02b0bac3fe64eda9/info
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T061218.200.json
+
+###
+
+GET http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T061210.200.json
+
+###
+
+GET http://localhost:3000/teams/5bc78656f34c1e2078895de5/info
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T061200.404.html
+
+###
+
+GET http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T061151.200.json
+
+###
+
+POST http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+
+<> 2018-10-18T060946.200.json
+
+###
+
+POST http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":ObjectId("5bc7acbc02b0bac3fe64eda9")}
+
+<> 2018-10-18T060924.400.html
+
+###
+
+POST http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"ObjectId("5bc7acbc02b0bac3fe64eda9")"}
+
+<> 2018-10-18T060913.400.html
+
+###
+
+POST http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"ObjectId("5bc7acbc02b0bac3fe64eda9")"}
+
+<> 2018-10-18T060447.400.html
+
+###
+
+GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
+
+<> 2018-10-18T055431.200.json
+
+###
+
+GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
+
+<> 2018-10-18T055202.200.json
+
+###
+
+GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
+
+<> 2018-10-18T055148.200.json
+
+###
+
+GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
+
+<> 2018-10-18T054928.200.json
+
+###
+
+GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
+
+<> 2018-10-18T054803.200.json
+
+###
+
+GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
+
+<> 2018-10-18T054735.200.json
+
+###
+
+GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
+
+<> 2018-10-18T054659.200.json
+
+###
+
+GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
+
+<> 2018-10-18T054617.200.json
+
+###
+
+GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
+
+<> 2018-10-18T054439.200.json
+
+###
+
+GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
+
+<> 2018-10-18T054355.200.json
 
 ###
 

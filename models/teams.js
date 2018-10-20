@@ -6,9 +6,10 @@ let TeamSchema = new mongoose.Schema({
         zone:{name:String,location:String},
         numPlayer: Number,
         championships:Number,
-        rank:Number
+        rank:Number,
+        // playerId: {type: mongoose.Schema.Types.ObjectId, ref: 'players'},
+    },{ versionKey:false},
 
-    },
-    { collection: 'team' });
+    { collection: 'teams' });
 
 module.exports = mongoose.model('teams', TeamSchema );

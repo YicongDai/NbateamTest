@@ -1,0 +1,14 @@
+{
+  "message": {
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "_id": "5bc78656f34c1e2078895de5",
+    "name": "Los Angeles Cippers",
+    "city": "Los Angeles ",
+    "numPlayer": 20,
+    "championships": 20,
+    "rank": 10
+  }
+}
