@@ -1,0 +1,29 @@
+{
+  "message": "Team NOT Added!",
+  "errmsg": {
+    "errors": {
+      "playerId": {
+        "message": "Cast to Array failed for value \"[ '5bcb5e110d3f4a3298c92564', '' ]\" at path \"playerId\"",
+        "name": "CastError",
+        "stringValue": "\"[ '5bcb5e110d3f4a3298c92564', '' ]\"",
+        "kind": "Array",
+        "value": [
+          "5bcb5e110d3f4a3298c92564",
+          ""
+        ],
+        "path": "playerId",
+        "reason": {
+          "message": "Cast to ObjectId failed for value \"\" at path \"playerId\"",
+          "name": "CastError",
+          "stringValue": "\"\"",
+          "kind": "ObjectId",
+          "value": "",
+          "path": "playerId"
+        }
+      }
+    },
+    "_message": "teams validation failed",
+    "message": "teams validation failed: playerId: Cast to Array failed for value \"[ '5bcb5e110d3f4a3298c92564', '' ]\" at path \"playerId\"",
+    "name": "ValidationError"
+  }
+}

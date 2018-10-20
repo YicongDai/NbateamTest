@@ -7,7 +7,7 @@ let TeamSchema = new mongoose.Schema({
         numPlayer: Number,
         championships:Number,
         rank:Number,
-        // playerId: {type: mongoose.Schema.Types.ObjectId, ref: 'players'},
+        playerId: [{type: mongoose.Schema.Types.ObjectId, ref: 'players'}],
     },{ versionKey:false},
 
     { collection: 'teams' });

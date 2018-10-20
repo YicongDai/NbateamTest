@@ -1,0 +1,85 @@
+[
+  {
+    "_id": "5bc78656f34c1e2078895de5",
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "name": "Los Angeles Cippers",
+    "city": "Los Angeles ",
+    "numPlayer": 20,
+    "championships": 20,
+    "rank": 10,
+    "playersInfo": []
+  },
+  {
+    "_id": "5bc786a3f34c1e2078895de6",
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "name": "Golden State Warriors",
+    "city": "Oakland",
+    "numPlayer": 16,
+    "championships": 16,
+    "rank": 2,
+    "playerId": [
+      "5bcb5ca70d3f4a3298c92562",
+      "5bcb5ca70d3f4a3298c92563"
+    ],
+    "playersInfo": []
+  },
+  {
+    "_id": "5bc786def34c1e2078895de7",
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "name": "Los Angeles Lakers",
+    "city": "Los Angeles",
+    "numPlayer": 16,
+    "championships": 16,
+    "rank": 11,
+    "playersInfo": []
+  },
+  {
+    "_id": "5bc786f7f34c1e2078895de8",
+    "zone": {
+      "name": "Center Division",
+      "location": "East"
+    },
+    "name": "Cleveland Cavaliers",
+    "city": "Cleveland ",
+    "numPlayer": 20,
+    "championships": 20,
+    "rank": 4,
+    "playersInfo": []
+  },
+  {
+    "_id": "5bcb892936dea225a06685bd",
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "name": "Los Angeles Cippers",
+    "city": "Los Angeles ",
+    "numPlayer": 20,
+    "championships": 20,
+    "rank": 10,
+    "playerId": "5bcb5e110d3f4a3298c92564",
+    "playersInfo": [
+      {
+        "_id": "5bcb5e110d3f4a3298c92564",
+        "name": "Avery Bradley",
+        "age": 27,
+        "height": 188,
+        "weight": 82,
+        "nationality": "USA",
+        "position": "PG/SG",
+        "teamId": "5bc78656f34c1e2078895de5",
+        "salary": 1200,
+        "joinTime": "2018"
+      }
+    ]
+  }
+]

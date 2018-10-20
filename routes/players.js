@@ -4,7 +4,7 @@ let router = express.Router();
 let mongoose = require('mongoose');
 // var mongodbUri ='mongodb://studentsinfodb:dycwjh123@ds247061.mlab.com:47061/studentsinfodb';
 // mongoose.connect(mongodbUri);
-mongoose.connect('mongodb://localhost:27017/NBAteamdb');
+mongoose.connect('mongodb://localhost:27017/NBAteamdb',{useNewUrlParser:true});
 
 let db = mongoose.connection;
 db.on('error', function (err) {

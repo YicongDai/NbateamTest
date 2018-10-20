@@ -5,7 +5,7 @@ let router = express.Router();
 let mongoose = require('mongoose');
 // var mongodbUri ='mongodb://studentsinfodb:dycwjh123@ds247061.mlab.com:47061/studentsinfodb';
 // mongoose.connect(mongodbUri);
-mongoose.connect('mongodb://localhost:27017/NBAteamdb');
+mongoose.connect('mongodb://localhost:27017/NBAteamdb',{useNewUrlParser:true});
 
 let db = mongoose.connection;
 
@@ -40,20 +40,20 @@ router.findOne = (req, res) => {
         }
     });
 };
-// router.findAllInformation= (req, res) => {
-//
-//     res.setHeader('Content-Type', 'application/json');
-//
-//     Teams.findOne({"_id": req.params.id}).populate({path:'playerId',select: 'name  -_id'}).exec(function (err, info) {
-//         if (err)
-//             res.send(err);
-//
-//         else
-//             res.send(JSON.stringify(info,null,5));
-//         // res.json({message:info.teamId,data:info});
-//     })
-//
-// };
+router.findAllPlayers= (req, res) => {
+
+    res.setHeader('Content-Type', 'application/json');
+
+    Teams.findOne({"_id": req.params.id}).populate({path:'playerId',select: 'name  -_id'}).exec(function (err, players) {
+        if (err)
+            res.send(err);
+
+        else
+            res.send(JSON.stringify(players,null,5));
+        // res.json({message:info.teamId,data:info});
+    })
+
+};
 router.findOneByName= (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     var keyword = req.params.name;
@@ -98,6 +98,7 @@ router.addTeam = (req, res) => {
     team.numPlayer =req.body.numPlayer;
     team.championships=req.body.numPlayer;
     team.rank=req.body.rank;
+    team.playerId=req.body.playerId;
 
 
    team.save(function(err) {
@@ -106,6 +107,46 @@ router.addTeam = (req, res) => {
         else
             res.json({ message: 'Team Added Successfully!',data:team});// return a suitable success message
     });
+};
+router.findAllInformation = (req, res) => {
+
+        res.setHeader('Content-Type', 'application/json');
+      Teams.findOne({"_id": req.params.id}).populate({path:'playerId',select: 'name age height weight nationality position salary joinTime  -_id'}).exec(function (err, teams) {
+          if (err)
+              res.send(err);
+
+          else
+
+
+              res.send(JSON.stringify(teams,null,5));
+    })
+    //     Teams.aggregate([
+    //         {
+    //             $lookup: {
+    //                 from: "players",
+    //                 localField: "_id",
+    //                 foreignField: "playerId",
+    //                 as: "playersInfo"
+    //             }
+    //
+    //         }
+    //     ]).allowDiskUse(true)
+    //
+    //         .exec((err, teams) => {
+    //
+    //             if (err) {
+    //                 res.json({message:"Teams Not Found!",errmsg: err});
+    //             }
+    //             else {
+    //
+    //                 for(var i=0;i<teams.teamId.length();i++){
+    //                     a +=teams.teamId[i].name;
+    //                     a+=" ."
+    //                 }
+    //                 res.send(JSON.stringify(a,null,5));
+    //             }
+    //
+    //         })
 };
 router.changeNumPlayer = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
@@ -148,8 +189,28 @@ router.changeRank = (req, res) => {
         }
     });
 };
+router.changePlayerId = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
 
-    router.deleteTeam= (req, res) => {
+    Teams.findById(req.params.id/*id from request parameters*/, function (err, team) {
+        if (err)
+            res.json({message: 'Team NOT Found!', errmsg: err});
+        else {
+            if (team != null) {
+                Teams.update({_id: req.params.id}, {rank: req.body.rank}, function (err) {
+                    if (err)
+                        res.json({message: 'Team NOT ChangeRank!', errmsg: err});
+                    else
+                        res.json({message: 'Team Successfully ChangeRank!'});
+                });
+            }
+            else
+                res.json({message: 'Team NOT Found! Please check the right id'});
+        }
+    });
+};
+
+router.deleteTeam= (req, res) => {
 
         Teams.findByIdAndRemove(req.params.id, function (err,teams) {
             if (err)

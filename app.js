@@ -31,7 +31,8 @@ app.get('/teams', teams.findAll);
 
 app.get('/teams/:id', teams.findOne);
 app.get('/teams/name/:name',teams.findOneByName);
-// app.get('/teams/info',teams.findAllInformation);
+app.get('/teams/:id/players',teams.findAllPlayers);
+app.get('/teams/:id/info',teams.findAllInformation);
 app.post('/teams',teams.addTeam);
 
 app.put('/teams/:id/rank', teams.changeRank);
