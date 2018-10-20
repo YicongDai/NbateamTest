@@ -1,0 +1,15 @@
+{
+  "message": "Player Added Successfully!",
+  "data": {
+    "_id": "5bcb63976d96d0246c2292b9",
+    "name": "Kevin Love",
+    "age": 30,
+    "height": 208,
+    "weight": 114,
+    "nationality": "USA",
+    "position": "PF/C",
+    "teamId": "5bc78656f34c1e2078895de8",
+    "salary": 3010,
+    "joinTime": "2014"
+  }
+}

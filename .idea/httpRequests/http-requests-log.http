@@ -1,11 +1,341 @@
-GET http://localhost:3000/teams/5bc78656f34c1e2078895de5
+GET http://localhost:3000/players/name/Kevin
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"Kevin Love","age":30,"height":208,"weight":114,"nationality":"USA","position": "PF/C","teamId":"5bc78656f34c1e2078895de8","salary":3010,"joinTime":"2014" }
 
-<> 2018-10-19T065256.200.json
+<> 2018-10-21T011931.200.json
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Kevin Love","age":30,"height":208,"weight":114,"nationality":"USA","position": "PF/C","teamId":"5bc78656f34c1e2078895de8","salary":3010,"joinTime":"2014" }
+
+<> 2018-10-21T011919.200.json
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Kevin Love","age":30","height":208,"weight":114,"nationality":"USA","position": "PF/C","teamId":"5bc78656f34c1e2078895de8","salary":3010,"joinTime":"2014" }
+
+<> 2018-10-21T011909.400.html
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Kevin Love","age":30","height":208,"weight":114,"nationality":"USA","position": "PF/C","teamId":"5bc78656f34c1e2078895de8","salary":3010,"joinTime":"2014" }
+
+<> 2018-10-21T011903.400.html
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Kevin Love","age":30","height":208,"weight":114,"nationality":"USA","position": "PF/C","teamId":"5bc78656f34c1e2078895de8","salary":3010,"joinTime":"2014" }
+
+<> 2018-10-21T011853.400.html
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Kevin Love","age":30",height":208,"weight":114,"nationality":"USA","position": "PF/C","teamId":"5bc78656f34c1e2078895de8","salary":3010,"joinTime":"2014" }
+
+<> 2018-10-21T011825.400.html
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Kevin Love","age":30",height":208,"weight":114,"nationality":"USA","position": "PF/C","teamId":"5bc78656f34c1e2078895de8","salary":3010,"joinTime":"2014" }
+
+<> 2018-10-21T011733.400.html
+
+###
+
+GET http://localhost:3000/players/position/SF
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"LeBorn James","age":33,"height":203,"weight":115,"nationality":"USA","position": "SF","teamId":"5bc78656f34c1e2078895de7","salary":3565,"joinTime":"2018" }
+
+<> 2018-10-21T011229.200.json
+
+###
+
+POST http://localhost:3000/players/positions
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"LeBorn James","age":33,"height":203,"weight":115,"nationality":"USA","position": "SF","teamId":"5bc78656f34c1e2078895de7","salary":3565,"joinTime":"2018" }
+
+<> 2018-10-21T011213.404.html
+
+###
+
+POST http://localhost:3000/players/positions/SF
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"LeBorn James","age":33,"height":203,"weight":115,"nationality":"USA","position": "SF","teamId":"5bc78656f34c1e2078895de7","salary":3565,"joinTime":"2018" }
+
+<> 2018-10-21T011207.404.html
+
+###
+
+POST http://localhost:3000/players/postions/SF
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"LeBorn James","age":33,"height":203,"weight":115,"nationality":"USA","position": "SF","teamId":"5bc78656f34c1e2078895de7","salary":3565,"joinTime":"2018" }
+
+<> 2018-10-21T011134.404.html
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"LeBorn James","age":33,"height":203,"weight":115,"nationality":"USA","position": "SF","teamId":"5bc78656f34c1e2078895de7","salary":3565,"joinTime":"2018" }
+
+<> 2018-10-21T010810.200.json
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"LeBorn James","age":33",height":203,"weight":115,"nationality":"USA","position": "SF","teamId":"5bc78656f34c1e2078895de7","salary":3565,"joinTime":"2018" }
+
+<> 2018-10-21T010749.400.html
+
+###
+
+GET http://localhost:3000/players/name/n
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Avery Bradley","age":27,"height":188,"weight":82,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de5","salary":1200,"joinTime":"2018" }
+
+<> 2018-10-21T125724.200.json
+
+###
+
+GET http://localhost:3000/players/Stephen%20Curry
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Avery Bradley","age":27,"height":188,"weight":82,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de5","salary":1200,"joinTime":"2018" }
+
+<> 2018-10-21T125629.200.json
+
+###
+
+GET http://localhost:3000/players/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Avery Bradley","age":27,"height":188,"weight":82,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de5","salary":1200,"joinTime":"2018" }
+
+<> 2018-10-21T125624.200.json
+
+###
+
+GET http://localhost:3000/players/5bcb5e110d3f4a3298c92564
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Avery Bradley","age":27,"height":188,"weight":82,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de5","salary":1200,"joinTime":"2018" }
+
+<> 2018-10-21T125608.200.json
+
+###
+
+GET http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Avery Bradley","age":27,"height":188,"weight":82,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de5","salary":1200,"joinTime":"2018" }
+
+<> 2018-10-21T125602.200.json
+
+###
+
+GET http://localhost:3000/players/5bcb5e110d3f4a3298c92564
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Avery Bradley","age":27,"height":188,"weight":82,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de5","salary":1200,"joinTime":"2018" }
+
+<> 2018-10-21T125553.200.json
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Avery Bradley","age":27,"height":188,"weight":82,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de5","salary":1200,"joinTime":"2018" }
+
+<> 2018-10-21T125545.200.json
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Avery Bradley","age":27"height":188,"weight":82,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de5","salary":1200,"joinTime":"2018" }
+
+<> 2018-10-21T125522.400.html
+
+###
+
+GET http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Kevin Durant","age":30,"height":206,"weight":109,"nationality":"USA","position": "SF","teamId":"5bc78656f34c1e2078895de6","salary":3000,"joinTime":"2018" }
+
+<> 2018-10-21T125227.200.json
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Kevin Durant","age":30,"height":206,"weight":109,"nationality":"USA","position": "SF","teamId":"5bc78656f34c1e2078895de6","salary":3000,"joinTime":"2018" }
+
+<> 2018-10-21T125223.200.json
+
+###
+
+GET http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Stephen Curry","age":30,"height":191,"weight":86,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de6","salary":3746,"joinTime":"2009" }
+
+<> 2018-10-21T125032.200.json
+
+###
+
+DELETE http://localhost:3000/players/5bc7acbc02b0bac3fe64eda9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Stephen Curry","age":30,"height":191,"weight":86,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de6","salary":3746,"joinTime":"2009" }
+
+<> 2018-10-21T125028.200.json
+
+###
+
+GET http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Stephen Curry","age":30,"height":191,"weight":86,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de6","salary":3746,"joinTime":"2009" }
+
+<> 2018-10-21T125019.200.json
+
+###
+
+GET http://localhost:3000/players/5bcb563d786d8a2a04fb7cc1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Stephen Curry","age":30,"height":191,"weight":86,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de6","salary":3746,"joinTime":"2009" }
+
+<> 2018-10-21T125016.200.json
+
+###
+
+DELETE http://localhost:3000/players/5bcb563d786d8a2a04fb7cc1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Stephen Curry","age":30,"height":191,"weight":86,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de6","salary":3746,"joinTime":"2009" }
+
+<> 2018-10-21T125013.200.json
+
+###
+
+GET http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Stephen Curry","age":30,"height":191,"weight":86,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de6","salary":3746,"joinTime":"2009" }
+
+<> 2018-10-21T124955.200.json
+
+###
+
+POST http://localhost:3000/players
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Stephen Curry","age":30,"height":191,"weight":86,"nationality":"USA","position": "PG/SG","teamId":"5bc78656f34c1e2078895de6","salary":3746,"joinTime":"2009" }
+
+<> 2018-10-21T124943.200.json
+
+###
+
+GET http://localhost:3000/players/name/11
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
+
+<> 2018-10-21T122926.200.json
 
 ###
 
@@ -14,53 +344,42 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T065246.200.json
+<> 2018-10-21T122801.200.json
 
 ###
 
-GET http://localhost:3000/players/11
+GET http://localhost:3000/team
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T063507.200.json
+<> 2018-10-21T122759.404.html
 
 ###
 
-GET http://localhost:3000/players/11
+GET http://localhost:3000/players/5bcb563d786d8a2a04fb7cc1/info
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T063400.500.json
+<> 2018-10-21T122735.200.json
 
 ###
 
-GET http://localhost:3000/players/11
+GET http://localhost:3000/players
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T063309.200.json
-
-###
-
-GET http://localhost:3000/players/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-19T063159.200.json
+<> 2018-10-21T122644.200.json
 
 ###
 
@@ -69,20 +388,9 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T063145.200.json
-
-###
-
-GET http://localhost:3000/players/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-19T063108.200.json
+<> 2018-10-21T122635.200.json
 
 ###
 
@@ -91,53 +399,31 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T063055.200.json
+<> 2018-10-21T122606.200.json
 
 ###
 
-GET http://localhost:3000/players/5bc7acbc02b0bac3fe64eda9
+DELETE http://localhost:3000/players/5bcb56c3786d8a2a04fb7cc2
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T063002.200.json
+<> 2018-10-21T122600.200.json
 
 ###
 
-GET http://localhost:3000/players
+GET http://localhost:3000/players/5bcb56c3786d8a2a04fb7cc2/info
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T062953.200.json
-
-###
-
-GET http://localhost:3000/players/11
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-19T062916.200.json
-
-###
-
-GET http://localhost:3000/players/11
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-19T062847.200.json
+<> 2018-10-21T122457.200.json
 
 ###
 
@@ -146,42 +432,31 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T062844.200.json
+<> 2018-10-21T122445.200.json
 
 ###
 
-GET http://localhost:3000/players/11
+POST http://localhost:3000/players
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T062842.200.json
+<> 2018-10-21T122435.200.json
 
 ###
 
-GET http://localhost:3000/players/11
+GET http://localhost:3000/players/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T062800.200.json
-
-###
-
-GET http://localhost:3000/players/11
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-19T062728.200.json
+<> 2018-10-21T122420.200.json
 
 ###
 
@@ -190,163 +465,9 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc7acbc02b0bac3fe64eda9","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-19T062716.200.json
-
-###
-
-GET http://localhost:3000/players
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-18T062204.200.json
-
-###
-
-DELETE http://localhost:3000/teams/5bc7b4cd577570208c7b2f12
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-18T061731.200.json
-
-###
-
-GET http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-18T061649.200.json
-
-###
-
-POST http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-18T061645.200.json
-
-###
-
-POST http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":ObjectId("5bc7acbc02b0bac3fe64eda9")}
-
-<> 2018-10-18T061636.400.html
-
-###
-
-POST http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"ObjectId("5bc7acbc02b0bac3fe64eda9")"}
-
-<> 2018-10-18T061625.400.html
-
-###
-
-POST http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":ObjectId("5bc7acbc02b0bac3fe64eda9")}
-
-<> 2018-10-18T061605.400.html
-
-###
-
-GET http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-18T061455.200.json
-
-###
-
-DELETE http://localhost:3000/teams/5bc7b32a9df70025a0a34fd5
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-18T061450.200.json
-
-###
-
-DELETE http://localhost:3000/teams/5bc7b32a9df70025a0a34fd5
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-18T061447.200.json
-
-###
-
-GET http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-18T061406.200.json
-
-###
-
-GET http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-18T061305.200.json
-
-###
-
-GET http://localhost:3000/teams/info
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-18T061251.200.json
-
-###
-
-GET http://localhost:3000/teams/info
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
-
-<> 2018-10-18T061227.200.json
+<> 2018-10-21T122408.200.json
 
 ###
 
@@ -355,196 +476,75 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc78656f34c1e2078895de5","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-18T061218.200.json
+<> 2018-10-21T122347.200.json
 
 ###
 
-GET http://localhost:3000/players
+GET http://localhost:3000/players/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc78656f34c1e2078895de5","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-18T061210.200.json
+<> 2018-10-21T122340.200.json
 
 ###
 
-GET http://localhost:3000/teams/5bc78656f34c1e2078895de5/info
+GET http://localhost:3000/players/5bc78656f34c1e2078895de5/info
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc78656f34c1e2078895de5","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-18T061200.404.html
+<> 2018-10-21T122307.200.json
 
 ###
 
-GET http://localhost:3000/teams
+GET http://localhost:3000/players/11
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc78656f34c1e2078895de5","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-18T061151.200.json
+<> 2018-10-21T122240.200.json
 
 ###
 
-POST http://localhost:3000/teams
+GET http://localhost:3000/players/111
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"5bc7acbc02b0bac3fe64eda9"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc78656f34c1e2078895de5","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-18T060946.200.json
+<> 2018-10-21T122235.200.json
 
 ###
 
-POST http://localhost:3000/teams
+GET http://localhost:3000/players/11
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":ObjectId("5bc7acbc02b0bac3fe64eda9")}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc78656f34c1e2078895de5","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-18T060924.400.html
+<> 2018-10-21T122231.200.json
 
 ###
 
-POST http://localhost:3000/teams
+POST http://localhost:3000/players
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"ObjectId("5bc7acbc02b0bac3fe64eda9")"}
+{"name":"111","age":1,"height":1,"weight":1,"nationality":"11","position": "1","teamId":"5bc78656f34c1e2078895de5","salary": 1,"joinTime":"1111-11-11" }
 
-<> 2018-10-18T060913.400.html
-
-###
-
-POST http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":"ObjectId("5bc7acbc02b0bac3fe64eda9")"}
-
-<> 2018-10-18T060447.400.html
-
-###
-
-GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
-
-<> 2018-10-18T055431.200.json
-
-###
-
-GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
-
-<> 2018-10-18T055202.200.json
-
-###
-
-GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
-
-<> 2018-10-18T055148.200.json
-
-###
-
-GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
-
-<> 2018-10-18T054928.200.json
-
-###
-
-GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
-
-<> 2018-10-18T054803.200.json
-
-###
-
-GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
-
-<> 2018-10-18T054735.200.json
-
-###
-
-GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
-
-<> 2018-10-18T054659.200.json
-
-###
-
-GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
-
-<> 2018-10-18T054617.200.json
-
-###
-
-GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
-
-<> 2018-10-18T054439.200.json
-
-###
-
-GET http://localhost:3000/players/info/5bc7acbc02b0bac3fe64eda9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4 }
-
-<> 2018-10-18T054355.200.json
+<> 2018-10-21T122221.200.json
 
 ###
 

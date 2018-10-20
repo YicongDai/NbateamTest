@@ -40,7 +40,16 @@ app.delete('/teams/:id', teams.deleteTeam);
 //players
 app.get('/players', players.findAll);
 app.get('/players/:name', players.findOne);
+app.get('/players/name/:name',players.findOneByName);
+app.get('/players/position/:position',players.findOneByPosition);
 app.get('/players/:id/info',players.findTeamInformation);
+app.post('/players',players.addPlayer);
+
+app.put('/players/:id/salary', players.changeSalary);
+// app.put('/teams/:id/numPlayer', teams.changeNumPlayer);
+app.delete('/players/:id', players.deletePlayer);
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

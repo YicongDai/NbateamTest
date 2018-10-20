@@ -1,0 +1,15 @@
+{
+  "message": "Player Added Successfully!",
+  "data": {
+    "_id": "5bcb5e110d3f4a3298c92564",
+    "name": "Avery Bradley",
+    "age": 27,
+    "height": 188,
+    "weight": 82,
+    "nationality": "USA",
+    "position": "PG/SG",
+    "teamId": "5bc78656f34c1e2078895de5",
+    "salary": 1200,
+    "joinTime": "2018"
+  }
+}
