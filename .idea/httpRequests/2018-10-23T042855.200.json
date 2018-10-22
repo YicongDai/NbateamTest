@@ -1,0 +1,15 @@
+{
+  "message": "Team Added Successfully!",
+  "data": {
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "_id": "5bce330708702a343caa192f",
+    "name": "Los Angeles Lakers",
+    "city": "Los Angeles",
+    "numPlayer": 16,
+    "championships": 16,
+    "rank": 11
+  }
+}

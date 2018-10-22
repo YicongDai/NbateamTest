@@ -1,0 +1,15 @@
+{
+  "message": "Team Added Successfully!",
+  "data": {
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "_id": "5bce32bb08702a343caa192e",
+    "name": "Golden State Warriors",
+    "city": "Oakland",
+    "numPlayer": 16,
+    "championships": 16,
+    "rank": 2
+  }
+}

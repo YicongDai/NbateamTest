@@ -1,0 +1,34 @@
+{
+  "zone": {
+    "name": "Pacific Division",
+    "location": "West"
+  },
+  "playerId": [
+    {
+      "name": "Stephen Curry",
+      "age": 30,
+      "height": 191,
+      "weight": 86,
+      "nationality": "USA",
+      "position": "PG/SG",
+      "salary": 3746,
+      "joinTime": "2009"
+    },
+    {
+      "name": "Kevin Durant",
+      "age": 30,
+      "height": 206,
+      "weight": 109,
+      "nationality": "USA",
+      "position": "SF",
+      "salary": 3000,
+      "joinTime": "2018"
+    }
+  ],
+  "_id": "5bce32bb08702a343caa192e",
+  "name": "Golden State Warriors",
+  "city": "Oakland",
+  "numPlayer": 16,
+  "championships": 16,
+  "rank": 2
+}

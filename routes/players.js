@@ -2,9 +2,9 @@ var Players= require('../models/players');
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
-// var mongodbUri ='mongodb://studentsinfodb:dycwjh123@ds247061.mlab.com:47061/studentsinfodb';
-// mongoose.connect(mongodbUri);
-mongoose.connect('mongodb://localhost:27017/NBAteamdb',{useNewUrlParser:true});
+var mongodbUri ='mongodb://YicongDai:dycwjh123@ds249372.mlab.com:49372/nbateamdb';
+mongoose.connect(mongodbUri ,{useNewUrlParser:true});
+// mongoose.connect('mongodb://localhost:27017/NBAteamdb',{useNewUrlParser:true});
 
 let db = mongoose.connection;
 db.on('error', function (err) {
@@ -39,7 +39,8 @@ router.findOne = (req, res) => {
             else  res.json({ message: 'Player NOT Found! Please check the right id'} );
         }
     });
-};
+}
+
 
 //find the team information related to a player
 router.findTeamInformation= (req, res) => {

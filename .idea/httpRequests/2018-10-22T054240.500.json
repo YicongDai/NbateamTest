@@ -1,0 +1,19 @@
+<h1>Cannot read property &#39;name&#39; of undefined</h1>
+<h2></h2>
+<pre>TypeError: Cannot read property &#39;name&#39; of undefined
+at router.addTeam (D: \NBATeam-1.0\routes\teams.js: 90:35)
+at Layer.handle [as handle_request] (D: \NBATeam-1.0\node_modules\express\lib\router\layer.js: 95: 5)
+at next (D: \NBATeam-1.0\node_modules\express\lib\router\route.js: 137: 13)
+at Route.dispatch (D: \NBATeam-1.0\node_modules\express\lib\router\route.js: 112: 3)
+at Layer.handle [as handle_request] (D: \NBATeam-1.0\node_modules\express\lib\router\layer.js: 95: 5)
+at D: \NBATeam-1.0\node_modules\express\lib\router\index.js: 281: 22
+at Function.process_params (D: \NBATeam-1.0\node_modules\express\lib\router\index.js: 335: 12)
+at next (D: \NBATeam-1.0\node_modules\express\lib\router\index.js: 275: 10)
+at D:\NBATeam-1.0\node_modules\express\lib\router\index.js: 635: 15
+at next (D:\NBATeam-1.0\node_modules\express\lib\router\index.js: 260: 14)
+at Function.handle (D:\NBATeam-1.0\node_modules\express\lib\router\index.js: 174: 3)
+at router (D:\NBATeam-1.0\node_modules\express\lib\router\index.js: 47: 12)
+at Layer.handle [as handle_request] (D: \NBATeam-1.0\node_modules\express\lib\router\layer.js: 95: 5)
+at trim_prefix (D: \NBATeam-1.0\node_modules\express\lib\router\index.js: 317: 13)
+at D: \NBATeam-1.0\node_modules\express\lib\router\index.js: 284: 7
+at Function.process_params (D: \NBATeam-1.0\node_modules\express\lib\router\index.js: 335: 12)</pre>

@@ -1,0 +1,15 @@
+{
+  "message": "Player Added Successfully!",
+  "data": {
+    "_id": "5bce34220255713614faa891",
+    "name": "Stephen Curry",
+    "age": 30,
+    "height": 191,
+    "weight": 86,
+    "nationality": "USA",
+    "position": "PG/SG",
+    "teamId": "5bce32bb08702a343caa192e",
+    "salary": 3746,
+    "joinTime": "2009"
+  }
+}

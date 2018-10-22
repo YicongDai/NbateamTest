@@ -1,0 +1,15 @@
+{
+  "message": "Player Added Successfully!",
+  "data": {
+    "_id": "5bce34f60255713614faa894",
+    "name": "LeBorn James",
+    "age": 33,
+    "height": 203,
+    "weight": 115,
+    "nationality": "USA",
+    "position": "SF",
+    "teamId": "5bce330708702a343caa192f",
+    "salary": 3565,
+    "joinTime": "2018"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "message": "Team Added Successfully!",
+  "data": {
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "_id": "5bcd9d6514f12d0ccc906034",
+    "name": "Los Angeles Cippers",
+    "city": "Los Angeles ",
+    "numPlayer": 20,
+    "championships": 20,
+    "rank": 10
+  }
+}
