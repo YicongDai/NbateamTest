@@ -14,6 +14,7 @@ db.on('error', function (err) {
 db.once('open', function () {
     console.log('Successfully Connected to [ ' + db.name + ' ]');
 });
+//find all players' information
 router.findAll = (req, res) => {
     // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
@@ -24,17 +25,8 @@ router.findAll = (req, res) => {
         res.send(JSON.stringify(players,null,5));
     });
 };
-router.findAll = (req, res) => {
-    // Return a JSON representation of our list
-    res.setHeader('Content-Type', 'application/json');
-  Players.find(function(err, players){
-        if (err)
-            res.send(err);
 
-        res.send(JSON.stringify(players,null,5));
-    });
-};
-
+// find a specific player's information by id
 router.findOne = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
@@ -49,6 +41,7 @@ router.findOne = (req, res) => {
     });
 };
 
+//find the team information related to a player
 router.findTeamInformation= (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
@@ -63,6 +56,7 @@ router.findTeamInformation= (req, res) => {
     })
 };
 
+//fuzzy search
 router.findOneByName= (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     var keyword = req.params.name;
@@ -94,6 +88,8 @@ router.findOneByName= (req, res) => {
 
         });
 };
+
+//fuzzy search
 router.findOneByPosition= (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     var keyword = req.params.position;
@@ -125,6 +121,8 @@ router.findOneByPosition= (req, res) => {
 
         });
 };
+
+//add a player
 router.addPlayer = (req, res) => {
 
 
@@ -149,6 +147,8 @@ router.addPlayer = (req, res) => {
             res.json({ message: 'Player Added Successfully!',data:player});// return a suitable success message
     });
 };
+
+//change salary
 router.changeSalary = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
@@ -170,27 +170,30 @@ router.changeSalary = (req, res) => {
     });
 };
 
-// router.changeRank = (req, res) => {
-//     res.setHeader('Content-Type', 'application/json');
-//
-//     Teams.findById(req.params.id/*id from request parameters*/, function (err, team) {
-//         if (err)
-//             res.json({message: 'Team NOT Found!', errmsg: err});
-//         else {
-//             if (team != null) {
-//                 Teams.update({_id: req.params.id}, {rank: req.body.rank}, function (err) {
-//                     if (err)
-//                         res.json({message: 'Team NOT ChangeRank!', errmsg: err});
-//                     else
-//                         res.json({message: 'Team Successfully ChangeRank!'});
-//                 });
-//             }
-//             else
-//                 res.json({message: 'Team NOT Found! Please check the right id'});
-//         }
-//     });
-// };
+//change teamId
+router.changeTeamId = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
 
+    Players.findById(req.params.id/*id from request parameters*/, function (err, player) {
+        if (err)
+            res.json({message: 'Team NOT Found!', errmsg: err});
+        else {
+            if (player != null) {
+                Players.update({_id: req.params.id}, {teamId: req.body.teamId}, function (err) {
+                    if (err)
+                        res.json({message: 'Player NOT Change teamId!', errmsg: err});
+                    else
+                        res.json({message: 'Player Successfully Change teamId!'});
+                });
+            }
+            else
+                res.json({message: 'Player NOT Found! Please check the right id'});
+        }
+    });
+
+};
+
+//delete a player
 router.deletePlayer= (req, res) => {
 
     Players.findByIdAndRemove(req.params.id, function (err,player) {

@@ -1,0 +1,15 @@
+{
+  "_id": "5bcb5ca70d3f4a3298c92562",
+  "name": "Stephen Curry",
+  "age": 30,
+  "height": 191,
+  "weight": 86,
+  "nationality": "USA",
+  "position": "PG/SG",
+  "teamId": {
+    "name": "Golden State Warriors",
+    "city": "Oakland"
+  },
+  "salary": 3746,
+  "joinTime": "2009"
+}

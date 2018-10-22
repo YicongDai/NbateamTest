@@ -1,0 +1,11 @@
+{
+  "message": "Team NOT Found!",
+  "errmsg": {
+    "message": "Cast to ObjectId failed for value \"5bc786a3f34c1e2078895de6¡¢rank\" at path \"_id\" for model \"teams\"",
+    "name": "CastError",
+    "stringValue": "\"5bc786a3f34c1e2078895de6¡¢rank\"",
+    "kind": "ObjectId",
+    "value": "5bc786a3f34c1e2078895de6¡¢rank",
+    "path": "_id"
+  }
+}

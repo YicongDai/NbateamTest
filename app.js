@@ -31,12 +31,13 @@ app.get('/teams', teams.findAll);
 
 app.get('/teams/:id', teams.findOne);
 app.get('/teams/name/:name',teams.findOneByName);
-app.get('/teams/:id/players',teams.findAllPlayers);
+
 app.get('/teams/:id/info',teams.findAllInformation);
 app.post('/teams',teams.addTeam);
 
 app.put('/teams/:id/rank', teams.changeRank);
 app.put('/teams/:id/numPlayer', teams.changeNumPlayer);
+app.put('/teams/:id/playerId',teams.changePlayerId);
 app.delete('/teams/:id', teams.deleteTeam);
 //players
 app.get('/players', players.findAll);
@@ -47,7 +48,7 @@ app.get('/players/:id/info',players.findTeamInformation);
 app.post('/players',players.addPlayer);
 
 app.put('/players/:id/salary', players.changeSalary);
-// app.put('/teams/:id/numPlayer', teams.changeNumPlayer);
+app.put('/players/:id/teamId',players.changeTeamId);
 app.delete('/players/:id', players.deletePlayer);
 
 

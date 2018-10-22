@@ -16,6 +16,8 @@ db.on('error', function (err) {
 db.once('open', function () {
     console.log('Successfully Connected to [ ' + db.name + ' ]');
 });
+
+//find all teams
 router.findAll = (req, res) => {
     // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
@@ -27,6 +29,7 @@ router.findAll = (req, res) => {
     });
 };
 
+//find a team
 router.findOne = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
@@ -40,20 +43,8 @@ router.findOne = (req, res) => {
         }
     });
 };
-router.findAllPlayers= (req, res) => {
 
-    res.setHeader('Content-Type', 'application/json');
-
-    Teams.findOne({"_id": req.params.id}).populate({path:'playerId',select: 'name  -_id'}).exec(function (err, players) {
-        if (err)
-            res.send(err);
-
-        else
-            res.send(JSON.stringify(players,null,5));
-        // res.json({message:info.teamId,data:info});
-    })
-
-};
+//fuzzy search
 router.findOneByName= (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     var keyword = req.params.name;
@@ -85,6 +76,8 @@ router.findOneByName= (req, res) => {
 
         });
 };
+
+//add a team
 router.addTeam = (req, res) => {
 
 
@@ -108,6 +101,8 @@ router.addTeam = (req, res) => {
             res.json({ message: 'Team Added Successfully!',data:team});// return a suitable success message
     });
 };
+
+//find all the players' information related to a team
 router.findAllInformation = (req, res) => {
 
         res.setHeader('Content-Type', 'application/json');
@@ -148,6 +143,8 @@ router.findAllInformation = (req, res) => {
     //
     //         })
 };
+
+//change the number of players
 router.changeNumPlayer = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
@@ -169,6 +166,7 @@ router.changeNumPlayer = (req, res) => {
     });
 };
 
+//change the team rank
 router.changeRank = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
@@ -189,6 +187,8 @@ router.changeRank = (req, res) => {
         }
     });
 };
+
+//change playerId
 router.changePlayerId = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
@@ -197,19 +197,21 @@ router.changePlayerId = (req, res) => {
             res.json({message: 'Team NOT Found!', errmsg: err});
         else {
             if (team != null) {
-                Teams.update({_id: req.params.id}, {rank: req.body.rank}, function (err) {
+                Teams.update({_id: req.params.id}, {playerId: req.body.playerId}, function (err) {
                     if (err)
-                        res.json({message: 'Team NOT ChangeRank!', errmsg: err});
+                        res.json({message: 'Team NOT Change playerId!', errmsg: err});
                     else
-                        res.json({message: 'Team Successfully ChangeRank!'});
+                        res.json({message: 'Team Successfully Change playerId!'});
                 });
             }
             else
                 res.json({message: 'Team NOT Found! Please check the right id'});
         }
     });
+
 };
 
+//delete a team
 router.deleteTeam= (req, res) => {
 
         Teams.findByIdAndRemove(req.params.id, function (err,teams) {
