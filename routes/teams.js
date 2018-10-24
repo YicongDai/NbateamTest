@@ -112,8 +112,8 @@ router.findAllInformation = (req, res) => {
 
           else
 
-
-              res.send(JSON.stringify(teams,null,5));
+              res.json({ message: 'Team Successfully find player!',data:teams})
+              // res.send(JSON.stringify(teams,null,5));
     })
     //     Teams.aggregate([
     //         {
