@@ -157,7 +157,7 @@ router.changeNumPlayer = (req, res) => {
                     if (err)
                         res.json({message: 'Team NOT Change NumPlayer!', errmsg: err});
                     else
-                        res.json({message: 'Team Successfully Change NumPlayer!'});
+                        res.json({message: 'Team Successfully Change NumPlayer!',data:team});
                 });
             }
             else
@@ -179,7 +179,7 @@ router.changeRank = (req, res) => {
                     if (err)
                         res.json({message: 'Team NOT ChangeRank!', errmsg: err});
                     else
-                        res.json({message: 'Team Successfully ChangeRank!'});
+                        res.json({message: 'Team Successfully ChangeRank!',data:team});
                 });
             }
             else
@@ -201,7 +201,7 @@ router.changePlayerId = (req, res) => {
                     if (err)
                         res.json({message: 'Team NOT Change playerId!', errmsg: err});
                     else
-                        res.json({message: 'Team Successfully Change playerId!'});
+                        res.json({message: 'Team Successfully Change playerId!',data:team});
                 });
             }
             else

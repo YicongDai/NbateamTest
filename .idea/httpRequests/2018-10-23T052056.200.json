@@ -1,0 +1,63 @@
+[
+  {
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "playerId": [
+      "5bce34f60255713614faa894"
+    ],
+    "_id": "5bce330708702a343caa192f",
+    "name": "Los Angeles Lakers",
+    "city": "Los Angeles",
+    "numPlayer": 16,
+    "championships": 16,
+    "rank": 11
+  },
+  {
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "playerId": [
+      "5bce34220255713614faa891",
+      "5bce346f0255713614faa892"
+    ],
+    "_id": "5bce32bb08702a343caa192e",
+    "name": "Golden State Warriors",
+    "city": "Oakland",
+    "numPlayer": 16,
+    "championships": 16,
+    "rank": 2
+  },
+  {
+    "zone": {
+      "name": "Center Division",
+      "location": "East"
+    },
+    "playerId": [
+      "5bce36630255713614faa895"
+    ],
+    "_id": "5bce32a608702a343caa192d",
+    "name": "Cleveland Cavaliers",
+    "city": "Cleveland ",
+    "numPlayer": 20,
+    "championships": 20,
+    "rank": 4
+  },
+  {
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "playerId": [
+      "5bce34b10255713614faa893"
+    ],
+    "_id": "5bcd9e2383c28b177432b21d",
+    "name": "Los Angeles Cippers",
+    "city": "Los Angeles ",
+    "numPlayer": 20,
+    "championships": 20,
+    "rank": 10
+  }
+]

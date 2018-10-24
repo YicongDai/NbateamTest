@@ -141,7 +141,7 @@ router.addPlayer = (req, res) => {
     player.salary=req.body.salary;
     player.joinTime=req.body.joinTime;
 
-    player.save(function(err) {
+    player.save(function(err,player) {
         if (err)
             res.json({ message: 'Player NOT Added!', errmsg : err } );// return a suitable error message
         else
@@ -153,7 +153,7 @@ router.addPlayer = (req, res) => {
 router.changeSalary = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
-    Players.findById(req.params.id/*id from request parameters*/, function (err, team) {
+    Players.findById(req.params.id/*id from request parameters*/, function (err, player) {
         if (err)
             res.json({message: 'Player NOT Found!', errmsg: err});
         else {
@@ -162,7 +162,7 @@ router.changeSalary = (req, res) => {
                     if (err)
                         res.json({message: 'Player NOT Change salary!', errmsg: err});
                     else
-                        res.json({message: 'Player Successfully Change salary!'});
+                        res.json({message: 'Player Successfully Change salary!',data:player});
                 });
             }
             else
@@ -184,7 +184,7 @@ router.changeTeamId = (req, res) => {
                     if (err)
                         res.json({message: 'Player NOT Change teamId!', errmsg: err});
                     else
-                        res.json({message: 'Player Successfully Change teamId!'});
+                        res.json({message: 'Player Successfully Change teamId!',data:player});
                 });
             }
             else

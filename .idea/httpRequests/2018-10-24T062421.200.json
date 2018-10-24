@@ -1,0 +1,21 @@
+{
+  "message": "Team Successfully ChangeRank!",
+  "data": {
+    "n": 1,
+    "nModified": 0,
+    "opTime": {
+      "ts": "6615867365336809473",
+      "t": 1
+    },
+    "electionId": "7fffffff0000000000000001",
+    "ok": 1,
+    "operationTime": "6615867365336809473",
+    "$clusterTime": {
+      "clusterTime": "6615867365336809473",
+      "signature": {
+        "hash": "WiONgtfOFOvQ14PDZItzsPtS3UQ=",
+        "keyId": "6598403770613235713"
+      }
+    }
+  }
+}
