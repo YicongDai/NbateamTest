@@ -175,7 +175,7 @@ router.changeRank = (req, res) => {
             res.json({message: 'Team NOT Found!', errmsg: err});
         else {
             if (team != null) {
-                Teams.update({_id: req.params.id}, {rank: req.body.rank}, function (err) {
+                team.update({_id: req.params.id}, {rank: req.body.rank}, function (err) {
                     if (err)
                         res.json({message: 'Team NOT ChangeRank!', errmsg: err});
                     else
