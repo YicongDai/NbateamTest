@@ -1,0 +1,18 @@
+{
+  "message": "Team Successfully ChangeRank!",
+  "data": {
+    "zone": {
+      "name": "Pacific Division",
+      "location": "West"
+    },
+    "playerId": [
+      "5bce34f60255713614faa894"
+    ],
+    "_id": "5bce330708702a343caa192f",
+    "name": "Los Angeles Lakers",
+    "city": "Los Angeles",
+    "numPlayer": 16,
+    "championships": 16,
+    "rank": 100
+  }
+}

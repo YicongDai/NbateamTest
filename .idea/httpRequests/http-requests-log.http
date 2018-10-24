@@ -1,3 +1,149 @@
+GET http://localhost:3000/teams/5bce330708702a343caa192f
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":1000}
+
+<> 2018-10-25T062402.200.json
+
+###
+
+PUT http://localhost:3000/teams/5bce330708702a343caa192f/rank
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":1000}
+
+<> 2018-10-25T062338.200.json
+
+###
+
+GET http://localhost:3000/teams/5bce330708702a343caa192f
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":1000}
+
+<> 2018-10-25T062327.200.json
+
+###
+
+GET http://localhost:3000/teams/5bce330708702a343caa192f
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":1000}
+
+###
+
+PUT http://localhost:3000/teams/5bce330708702a343caa192f/rank
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":1000}
+
+<> 2018-10-25T062224.200.json
+
+###
+
+GET http://localhost:3000/teams/5bce330708702a343caa192f
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":10000}
+
+<> 2018-10-25T062157.200.json
+
+###
+
+PUT http://localhost:3000/teams/5bce330708702a343caa192f/rank
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":10000}
+
+<> 2018-10-25T062124.200.json
+
+###
+
+PUT http://localhost:3000/teams/5bce330708702a343caa192f/rank
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":10000}
+
+<> 2018-10-25T062107.200.json
+
+###
+
+PUT http://localhost:3000/teams/5bce330708702a343caa192f/rank
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-25T061729.200.json
+
+###
+
+PUT http://localhost:3000/teams/5bce330708702a343caa192f/rank
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-25T061701.200.json
+
+###
+
+GET http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+<> 2018-10-25T061641.200.json
+
+###
+
+GET http://localhost:3000/teams
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+###
+
+PUT http://localhost:3000/teams/5bcd9e2383c28b177432b21d/rank
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+###
+
+PUT http://localhost:3000/teams/5bcd9e2383c28b177432b21d/rank
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":100}
+
+###
+
 PUT http://localhost:3000/teams/5bcd9e2383c28b177432b21d/rank
 Accept: */*
 Cache-Control: no-cache
@@ -389,160 +535,6 @@ Content-Type: application/json
 {"name" : "LeBorn James", "age" : 33, "height" : 203, "weight" : 115, "nationality" : "USA", "position" : "SF", "teamId" : "5bce330708702a343caa192f", "salary" : 3565, "joinTime" : "2018" }
 
 <> 2018-10-23T043711.200.json
-
-###
-
-POST http://localhost:3000/players
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Avery Bradley", "age" : 27, "height" : 188, "weight" : 82, "nationality" : "USA", "position" : "PG/SG", "teamId" : "5bcd9e2383c28b177432b21d", "salary" : 1200, "joinTime" : "2018" }
-
-<> 2018-10-23T043602.200.json
-
-###
-
-POST http://localhost:3000/players
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Kevin Durant", "age" : 30, "height" : 206, "weight" : 109, "nationality" : "USA", "position" : "SF", "teamId" :"5bce32bb08702a343caa192e", "salary" : 3000, "joinTime" : "2018" }
-
-<> 2018-10-23T043455.200.json
-
-###
-
-POST http://localhost:3000/players
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Stephen Curry", "age" : 30, "height" : 191, "weight" : 86, "nationality" : "USA", "position" : "PG/SG", "teamId" : "5bce32bb08702a343caa192e", "salary" : 3746, "joinTime" : "2009" }
-
-<> 2018-10-23T043338.200.json
-
-###
-
-POST http://localhost:3000/players
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Stephen Curry", "age" : 30, "height" : 191, "weight" : 86, "nationality" : "USA", "position" : "PG/SG", "teamId" : ("5bce32bb08702a343caa192e"), "salary" : 3746, "joinTime" : "2009" }
-
-<> 2018-10-23T043327.400.html
-
-###
-
-POST http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4}
-
-<> 2018-10-23T042952.200.json
-
-###
-
-POST http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Cleveland Cavaliers", "city" : "Cleveland ", "zone" : { "name" : "Center Division", "location" : "East" }, "numPlayer" : 20, "championships" : 1, "rank" : 4,"playerId":ObjectId("5bc7acbc02b0bac3fe64eda9")}
-
-<> 2018-10-23T042916.400.html
-
-###
-
-POST http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Los Angeles Lakers", "city" : "Los Angeles", "zone" : { "name" : "Pacific Division", "location" : "West" }, "numPlayer" : 16, "championships" : 16, "rank" : 11 }
-
-<> 2018-10-23T042855.200.json
-
-###
-
-POST http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Golden State Warriors", "city" : "Oakland", "zone" : { "name" : "Pacific Division", "location" : "West" }, "numPlayer" : 16, "championships" : 5, "rank" : 2 }
-
-<> 2018-10-23T042739.200.json
-
-###
-
-POST http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"Cleveland Cavaliers","city":"Cleveland ","zone":{"name":"Center Division","location":"East"}, "numPlayer": 20, "championships":1,"rank":4}
-
-<> 2018-10-23T042719.200.json
-
-###
-
-POST http://localhost:3000/players
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20,"championships":0,"rank":10}
-
-<> 2018-10-22T055825.200.json
-
-###
-
-POST http://localhost:3000/player
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20,"championships":0,"rank":10}
-
-<> 2018-10-22T055824.404.html
-
-###
-
-POST http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20,"championships":0,"rank":10}
-
-<> 2018-10-22T055339.200.json
-
-###
-
-DELETE http://localhost:3000/teams/5bcd9d6514f12d0ccc906034
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20,"championships":0,"rank":10}
-
-<> 2018-10-22T055212.200.json
-
-###
-
-GET http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"Los Angeles Cippers","city":"Los Angeles ","zone":{"name":"Pacific Division","location":"West"}, "numPlayer": 20,"championships":0,"rank":10}
-
-<> 2018-10-22T055141.200.json
 
 ###
 

@@ -131,6 +131,89 @@ describe('Teams', function () {
                 });
         });  // end-after
     }); // end-describe
+    describe('PUT /teams/:id/rank', () => {
+        it('should return a message and the rank changed', function(done) {
+            chai.request(server)
+                .get('/teams')
+                .end(function (err, res) {
+                    let rank={rank:111};
+                    chai.request(server)
+                        .put('/teams/' + res.body[4]._id+'/rank')
+                        .send(rank)
+                        .end(function (error, response) {
+                            expect(response).to.have.status(200);
+                            expect(response.body).to.be.a('object');
+                            expect(response.body).to.have.property('message').equal('Team Successfully ChangeRank!' );
+                            done()
+                        });
+                });
+        });
+        after(function  (done) {
+            chai.request(server)
+                .get('/teams')
+                .end(function(err, res) {
+
+                    expect( res.body[4].rank).equal(111) ;
+                    done();
+                });
+        });  // end-after
+    }); // end-describe
+
+    describe('PUT /teams/:id/numPlayer', () => {
+        it('should return a message and the nunmPlayer changed', function(done) {
+            chai.request(server)
+                .get('/teams')
+                .end(function (err, res) {
+                    let numPlayer={numPlayer:201};
+                    chai.request(server)
+                        .put('/teams/' + res.body[4]._id+'/numPlayer')
+                        .send(numPlayer)
+                        .end(function (error, response) {
+                            expect(response).to.have.status(200);
+                            expect(response.body).to.be.a('object');
+                            expect(response.body).to.have.property('message').equal('Team Successfully Change NumPlayer!' );
+                            done()
+                        });
+                });
+        });
+        after(function  (done) {
+            chai.request(server)
+                .get('/teams')
+                .end(function(err, res) {
+
+                    expect( res.body[4].numPlayer).equal(201) ;
+                    done();
+                });
+        });  // end-after
+    }); // end-describe
+
+    // describe('PUT /teams/:id/playerId', () => {
+    //     it('should return a message and the playerId changed', function(done) {
+    //         chai.request(server)
+    //             .get('/teams')
+    //             .end(function (err, res) {
+    //                 let playerId={playerId:['5bce34b10255713614faa893']};
+    //                 chai.request(server)
+    //                     .put('/teams/' + res.body[4]._id+'/playerId')
+    //                     .send(playerId)
+    //                     .end(function (error, response) {
+    //                         expect(response).to.have.status(200);
+    //                         expect(response.body).to.be.a('object');
+    //                         expect(response.body).to.have.property('message').equal('Team Successfully Change playerId!' );
+    //                         done()
+    //                     });
+    //             });
+    //     });
+    //     after(function  (done) {
+    //         chai.request(server)
+    //             .get('/teams')
+    //             .end(function(err, res) {
+    //
+    //                 expect( res.body[4].playerId).equal(['5bce34b10255713614faa893']) ;
+    //                 done();
+    //             });
+    //     });  // end-after
+    // }); // end-describe
     describe('delete /teams/:id', () => {
         it('should delete a specific team', function(done) {
             chai.request(server)

@@ -153,44 +153,44 @@ router.addPlayer = (req, res) => {
 router.changeSalary = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
-    Players.findById(req.params.id/*id from request parameters*/, function (err, player) {
+    // Players.findById(req.params.id/*id from request parameters*/, function (err, player) {
+    //     if (err)
+    //         res.json({message: 'Player NOT Found!', errmsg: err});
+    //     else {
+    //         if (team != null) {
+    Players.findByIdAndUpdate({"_id": req.params.id}, {$set: {salary: req.body.salary}}, function (err) {
         if (err)
-            res.json({message: 'Player NOT Found!', errmsg: err});
-        else {
-            if (team != null) {
-                Players.update({_id: req.params.id}, {salary: req.body.salary}, function (err) {
-                    if (err)
-                        res.json({message: 'Player NOT Change salary!', errmsg: err});
-                    else
-                        res.json({message: 'Player Successfully Change salary!',data:player});
-                });
-            }
-            else
-                res.json({message: 'Player NOT Found! Please check the right id'});
-        }
+            res.json({message: 'Player NOT Change salary!', errmsg: err});
+        else
+            res.json({message: 'Player Successfully Change salary!'});
     });
+    //         }
+    //         else
+    //             res.json({message: 'Player NOT Found! Please check the right id'});
+    //     }
+    // });
 };
 
 //change teamId
 router.changeTeamId = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
-    Players.findById(req.params.id/*id from request parameters*/, function (err, player) {
-        if (err)
-            res.json({message: 'Team NOT Found!', errmsg: err});
-        else {
-            if (player != null) {
-                Players.update({_id: req.params.id}, {teamId: req.body.teamId}, function (err) {
-                    if (err)
-                        res.json({message: 'Player NOT Change teamId!', errmsg: err});
-                    else
-                        res.json({message: 'Player Successfully Change teamId!',data:player});
-                });
-            }
-            else
-                res.json({message: 'Player NOT Found! Please check the right id'});
-        }
-    });
+    // Players.findById(req.params.id/*id from request parameters*/, function (err, player) {
+    //     if (err)
+    //         res.json({message: 'Team NOT Found!', errmsg: err});
+    //     else {
+    //         if (player != null) {
+   Players.findByIdAndUpdate({"_id": req.params.id}, {$set:{teamId: req.body.teamId}}, function (err) {
+       if (err)
+           res.json({message: 'Player NOT Change teamId!', errmsg: err});
+       else
+           res.json({message: 'Player Successfully Change teamId!'});
+   });
+    //         }
+    //     //         else
+    //     //             res.json({message: 'Player NOT Found! Please check the right id'});
+    //     //     }
+    //     // });
 
 };
 

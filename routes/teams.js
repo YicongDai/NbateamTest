@@ -148,66 +148,66 @@ router.findAllInformation = (req, res) => {
 router.changeNumPlayer = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
-    Teams.findById(req.params.id/*id from request parameters*/, function (err, team) {
+    // Teams.findById(req.params.id/*id from request parameters*/, function (err, team) {
+    //     if (err)
+    //         res.json({message: 'Team NOT Found!', errmsg: err});
+    //     else {
+    //         if (team != null) {
+    Teams.findByIdAndUpdate({"_id": req.params.id}, {$set:{numPlayer: req.body.numPlayer}}, function (err) {
         if (err)
-            res.json({message: 'Team NOT Found!', errmsg: err});
-        else {
-            if (team != null) {
-                Teams.update({_id: req.params.id}, {numPlayer: req.body.numPlayer}, function (err) {
-                    if (err)
-                        res.json({message: 'Team NOT Change NumPlayer!', errmsg: err});
-                    else
-                        res.json({message: 'Team Successfully Change NumPlayer!',data:team});
-                });
-            }
-            else
-                res.json({message: 'Team NOT Found! Please check the right id'});
-        }
+            res.json({message: 'Team NOT Change NumPlayer!', errmsg: err});
+        else
+            res.json({message: 'Team Successfully Change NumPlayer!'});
     });
+
+    //         else
+    //             res.json({message: 'Team NOT Found! Please check the right id'});
+    //     }
+    // });
 };
 
 //change the team rank
 router.changeRank = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
-    Teams.findById(req.params.id/*id from request parameters*/, function (err, team) {
+    // Teams.findById(req.params.id/*id from request parameters*/, function (err, team) {
+    //     if (err)
+    //         res.json({message: 'Team NOT Found!', errmsg: err});
+    //     else {
+    //         if (team != null) {
+    Teams.findByIdAndUpdate({"_id": req.params.id}, {$set:{"rank": req.body.rank}}, function (err,team) {
         if (err)
-            res.json({message: 'Team NOT Found!', errmsg: err});
-        else {
-            if (team != null) {
-                team.update({_id: req.params.id}, {rank: req.body.rank}, function (err) {
-                    if (err)
-                        res.json({message: 'Team NOT ChangeRank!', errmsg: err});
-                    else
-                        res.json({message: 'Team Successfully ChangeRank!',data:team});
-                });
-            }
-            else
-                res.json({message: 'Team NOT Found! Please check the right id'});
-        }
+            res.json({message: 'Team NOT ChangeRank!', errmsg: err});
+        else
+            res.json({message: 'Team Successfully ChangeRank!'});
     });
+
+    //         else
+    //             res.json({message: 'Team NOT Found! Please check the right id'});
+    //     }
+    // });
 };
 
 //change playerId
 router.changePlayerId = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
-    Teams.findById(req.params.id/*id from request parameters*/, function (err, team) {
+    // Teams.findById(req.params.id/*id from request parameters*/, function (err, team) {
+    //     if (err)
+    //         res.json({message: 'Team NOT Found!', errmsg: err});
+    //     else {
+    //         if (team != null) {
+    Teams.findByIdAndUpdate({"_id": req.params.id}, {$set:{playerId: req.body.playerId}}, function (err) {
         if (err)
-            res.json({message: 'Team NOT Found!', errmsg: err});
-        else {
-            if (team != null) {
-                Teams.update({_id: req.params.id}, {playerId: req.body.playerId}, function (err) {
-                    if (err)
-                        res.json({message: 'Team NOT Change playerId!', errmsg: err});
-                    else
-                        res.json({message: 'Team Successfully Change playerId!',data:team});
-                });
-            }
-            else
-                res.json({message: 'Team NOT Found! Please check the right id'});
-        }
+            res.json({message: 'Team NOT Change playerId!', errmsg: err});
+        else
+            res.json({message: 'Team Successfully Change playerId!'});
     });
+
+    //         else
+    //             res.json({message: 'Team NOT Found! Please check the right id'});
+    //     }
+    // });
 
 };
 
