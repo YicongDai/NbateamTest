@@ -90,4 +90,45 @@ describe('Teams', function () {
                 });
         });
     });
+    describe('POST /teams', function () {
+        it('should return confirmation message', function (done) {
+            let team = {
+                name: "Cleveland Cavaliers",
+                city: "Cleveland",
+                zone: {name: "Center Division", location: "East"},
+                numPlayer: 20,
+                championships: 1,
+                rank: 4,
+                playerId: [
+                    "5bce36630255713614faa895"
+                ]
+            };
+            chai.request(server)
+                .post('/teams')
+                .send(team)
+                .end(function (err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.have.property('message').equal('Team Added Successfully!');
+                    // expect(res.body).to.have.property('data');
+                    // expect(res.body.data).to.be.a('object');
+                    // expect(res.body.data).to.have.property('name');
+                    // expect(res.body.data).to.have.property('city');
+                    // expect(res.body.data.name).to.equal('Cleveland Cavaliers');
+                    // expect(res.body.data.city).to.equal('Cleveland');
+                    done();
+                });
+        });
+        after(function  (done) {
+            chai.request(server)
+                .get('/teams')
+                .end(function(err, res) {
+                    let result = _.map(res.body, (team) => {
+                        return { name: team.name,
+                            city: team.city };
+                    }  );
+                    expect(result).to.include( { name: 'Cleveland Cavaliers', city: "Cleveland"  } );
+                    done();
+                });
+        });  // end-after
+    }); // end-describe
 });
