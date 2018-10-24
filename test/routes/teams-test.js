@@ -131,4 +131,24 @@ describe('Teams', function () {
                 });
         });  // end-after
     }); // end-describe
+    describe('delete /teams/:id', () => {
+        it('should delete a specific team', function(done) {
+            chai.request(server)
+                .get('/teams')
+                .end(function (err, res) {
+                    chai.request(server)
+                        .delete('/teams/' + res.body[4]._id)
+                        .end(function (error, response) {
+                            expect(response).to.have.status(200);
+
+                            expect(response.body).to.be.a('object');
+                            expect(response.body).to.have.property('message').equal('Team Successfully Deleted!');
+                            expect(response.body).to.have.property('data');
+                            expect(response.body.data).to.have.property('_id');
+                            expect(response.body.data._id).equal(res.body[4]._id);
+                            done();
+                        });
+                });
+        });
+    });
 });

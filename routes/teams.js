@@ -219,7 +219,7 @@ router.deleteTeam= (req, res) => {
                 res.json({message: 'Team NOT DELETED!', errmsg: err});
             else {
                 if (teams != null)
-                    res.json({message: 'Team Successfully Deleted!'});
+                    res.json({message: 'Team Successfully Deleted!',data:teams});
 
                 else
                     res.json({message: 'Team NOT Found! Please check the right id'});
