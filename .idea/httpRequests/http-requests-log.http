@@ -1,3 +1,113 @@
+GET http://localhost:3000/players/5bce34220255713614faa891/info
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"teamId":"5bce34220255713614faa891"}
+
+<> 2018-10-25T072721.200.json
+
+###
+
+GET http://localhost:3000/players/5bce34220255713614faa891/info
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"teamId":"5bce34220255713614faa891"}
+
+<> 2018-10-25T072559.200.json
+
+###
+
+GET http://localhost:3000/players/5bce36630255713614faa895/info
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"teamId":"5bce34220255713614faa891"}
+
+<> 2018-10-25T072447.200.json
+
+###
+
+GET http://localhost:3000/players/5bce34f60255713614faa894/info
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"teamId":"5bce34220255713614faa891"}
+
+<> 2018-10-25T072439.200.json
+
+###
+
+GET http://localhost:3000/players/5bce34b10255713614faa893/info
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"teamId":"5bce34220255713614faa891"}
+
+<> 2018-10-25T072359.200.json
+
+###
+
+GET http://localhost:3000/players/5bce34b10255713614faa893
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"teamId":"5bce34220255713614faa891"}
+
+<> 2018-10-25T072353.200.json
+
+###
+
+PUT http://localhost:3000/players/5bce34220255713614faa891/teamId
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"teamId":"5bce34220255713614faa891"}
+
+<> 2018-10-25T072235.200.json
+
+###
+
+PUT http://localhost:3000/players/5bce34220255713614faa891/teamId
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"teamId":5bce34220255713614faa891"}
+
+<> 2018-10-25T072228.400.html
+
+###
+
+GET http://localhost:3000/players/5bce34220255713614faa891/info
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":1000}
+
+<> 2018-10-25T072115.200.json
+
+###
+
+GET http://localhost:3000/tplayers/5bce34220255713614faa891/info
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"rank":1000}
+
+<> 2018-10-25T072107.404.html
+
+###
+
 GET http://localhost:3000/teams/5bce330708702a343caa192f
 Accept: */*
 Cache-Control: no-cache
@@ -427,114 +537,6 @@ Content-Type: application/json
 {"playerId":["5bce34220255713614faa891"]
 
 <> 2018-10-23T050303.400.html
-
-###
-
-GET http://localhost:3000/teams/5bcd9e2383c28b177432b21d
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-23T050021.200.json
-
-###
-
-GET http://localhost:3000/teams/5bcd9e2383c28b177432b21d
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{playerId:[""] }
-
-<> 2018-10-23T050015.400.html
-
-###
-
-PUT http://localhost:3000/teams/5bcd9e2383c28b177432b21d
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{playerId:[""] }
-
-<> 2018-10-23T050011.400.html
-
-###
-
-GET http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Kevin Love", "age" : 30, "height" : 208, "weight" : 114, "nationality" : "USA", "position" : "PF/C", "teamId" : "5bce32a608702a343caa192d", "salary" : 3010, "joinTime" : "2014" }
-
-<> 2018-10-23T044430.200.json
-
-###
-
-GET http://localhost:3000/players
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Kevin Love", "age" : 30, "height" : 208, "weight" : 114, "nationality" : "USA", "position" : "PF/C", "teamId" : "5bce32a608702a343caa192d", "salary" : 3010, "joinTime" : "2014" }
-
-<> 2018-10-23T044320.200.json
-
-###
-
-POST http://localhost:3000/players
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Kevin Love", "age" : 30, "height" : 208, "weight" : 114, "nationality" : "USA", "position" : "PF/C", "teamId" : "5bce32a608702a343caa192d", "salary" : 3010, "joinTime" : "2014" }
-
-<> 2018-10-23T044315.200.json
-
-###
-
-GET http://localhost:3000/teams
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "LeBorn James", "age" : 33, "height" : 203, "weight" : 115, "nationality" : "USA", "position" : "SF", "teamId" : "5bce330708702a343caa192f", "salary" : 3565, "joinTime" : "2018" }
-
-<> 2018-10-23T043943.200.json
-
-###
-
-GET http://localhost:3000/players/5bce34220255713614faa891/info
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "LeBorn James", "age" : 33, "height" : 203, "weight" : 115, "nationality" : "USA", "position" : "SF", "teamId" : "5bce330708702a343caa192f", "salary" : 3565, "joinTime" : "2018" }
-
-<> 2018-10-23T043843.200.json
-
-###
-
-GET http://localhost:3000/players
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "LeBorn James", "age" : 33, "height" : 203, "weight" : 115, "nationality" : "USA", "position" : "SF", "teamId" : "5bce330708702a343caa192f", "salary" : 3565, "joinTime" : "2018" }
-
-<> 2018-10-23T043814.200.json
-
-###
-
-POST http://localhost:3000/players
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "LeBorn James", "age" : 33, "height" : 203, "weight" : 115, "nationality" : "USA", "position" : "SF", "teamId" : "5bce330708702a343caa192f", "salary" : 3565, "joinTime" : "2018" }
-
-<> 2018-10-23T043711.200.json
 
 ###
 

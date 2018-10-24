@@ -36,7 +36,7 @@ router.findOne = (req, res) => {
         else {
             if (player!=null)
                 res.send(JSON.stringify(player, null, 5));
-            else  res.json({ message: 'Player NOT Found! Please check the right id'} );
+            else  res.json({ message: 'Player NOT Found! Please check the right name'} );
         }
     });
 }
@@ -52,7 +52,8 @@ router.findTeamInformation= (req, res) => {
             res.send(err);
 
         else
-            res.send(JSON.stringify(info,null,5));
+            res.json({ message: 'Player Successfully find team!',data:info})
+            // res.send(JSON.stringify(info,null,5));
             // res.json({message:info.teamId,data:info});
     })
 };
@@ -202,7 +203,7 @@ router.deletePlayer= (req, res) => {
             res.json({message: 'Player NOT DELETED!', errmsg: err});
         else {
             if (player != null)
-                res.json({message: 'Player Successfully Deleted!'});
+                res.json({message: 'Player Successfully Deleted!',data:player});
 
             else
                 res.json({message: 'Player NOT Found! Please check the right id'});

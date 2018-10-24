@@ -1,5 +1,5 @@
 {
-  "message": "Player Added Successfully!",
+  "message": "Player Successfully find team!",
   "data": {
     "_id": "5bce36630255713614faa895",
     "name": "Kevin Love",
@@ -8,7 +8,10 @@
     "weight": 114,
     "nationality": "USA",
     "position": "PF/C",
-    "teamId": "5bce32a608702a343caa192d",
+    "teamId": {
+      "name": "Cleveland Cavaliers",
+      "city": "Cleveland"
+    },
     "salary": 3010,
     "joinTime": "2014"
   }
