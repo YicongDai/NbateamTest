@@ -1,0 +1,25 @@
+
+get	/teams
+	/teams/5bce330708702a343caa192f
+	/teams/name/los
+	/teams/5bd0e6547a18b008fca9f57d/info
+post /teams
+     {"name" : "1", "city" : "1", "zone" : { "name" : "1", "location" : "1" }, "numPlayer" : 20, "championships" : 1, "rank" : 5,"playerId":["5bce34220255713614faa891"]}
+put	/teams/5bce330708702a343caa192f/rank
+     {"rank":100}
+delete	/teams/:id
+
+
+get	/players
+	/players/Stephen Curry
+	/players/name/s
+
+	/players/5bce34220255713614faa891/info
+post /players
+{"name" : "aaa", "age" : 23, "height" : 210, "weight" : 120, "nationality" : "USA", "position" : "SF", "teamId" : ("5bd0e6547a18b008fca9f57d"), "salary" :1234, "joinTime" : "2019"}
+
+put	/players/5bce34220255713614faa891/salary
+{"salary":300000}
+
+delete	'/players/:id'
+
